@@ -18,15 +18,15 @@ print('-----------------------------------------------------------')
 print('---------------------ASIGNANDO PERMISOS--------------------')
 print('-----------------------------------------------------------')
 
-subprocess.run(['sudo', 'chown', f'{username}:{username}', '../../opt/'])
+subprocess.run(['sudo', 'chown', f'{username}:{username}', '../../../opt/'])
 
 print('-----------------------------------------------------------')
 print('---------------------INSTALANDO FIREFOX--------------------')
 print('-----------------------------------------------------------')
 
-subprocess.run(['sudo','-u','apollo','mv', f'/home/{username}/Descargas/{firefox_f}', '../../opt'])
-subprocess.run(['sudo','-u','apollo','tar', '-xjf', f'../../opt/{firefox_f}','-C','/opt/'])
-subprocess.run(['sudo','-u','apollo','rm', f'../../opt/{firefox_f}'])
+subprocess.run(['sudo','-u','apollo','mv', f'/home/{username}/Descargas/{firefox_f}', '../../../opt'])
+subprocess.run(['sudo','-u','apollo','tar', '-xjf', f'../../../opt/{firefox_f}','-C','/opt/'])
+subprocess.run(['sudo','-u','apollo','rm', f'../../../opt/{firefox_f}'])
 
 print('-----------------------------------------------------------')
 print('---------------------FIREFOX INSTALADO---------------------')
