@@ -2,7 +2,7 @@ import os,time
 
 '''
 Agregar esta linea arriba del todo en ~/.config/bspwm/bspwmrc
--   pi
+-   wmname LG3D &
 '''
 
 username = "apollo"
