@@ -2,7 +2,7 @@ import os,time
 
 '''
 Agregar esta linea arriba del todo en ~/.config/bspwm/bspwmrc
--   wmname LG3D &
+-   pi
 '''
 
 username = "apollo"
@@ -140,7 +140,8 @@ print('-----------------------------------------------------------')
 
 os.system('mkdir ~/.config/bin')
 os.system('rm -rf ~/.config/polybar/launch.sh')
-os.system('rm -rf ~/.config/polybar/Current.ini')
+os.system('rm -rf ~/.config/polybar/current.ini')
+os.system('chmod +x ../autoParrot/launch.sh')
 os.system('cp ../autoParrot/launch.sh ~/.config/polybar/')
 os.system('cp ../autoParrot/current.ini ~/.config/polybar/')
 
